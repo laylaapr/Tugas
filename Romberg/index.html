@@ -42,7 +42,7 @@
     
     
       
-        <title>**METODE INTEGRASI ROMBERG** - Lailatul Badria D.A.A</title>
+        <title>Integrasi Romberg - Lailatul Badria D.A.A</title>
       
     
     
@@ -144,7 +144,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                **METODE INTEGRASI ROMBERG**
+                Integrasi Romberg
               
             </span>
           
@@ -349,10 +349,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Komputasi Numerik
@@ -397,6 +399,70 @@
     <a href="../Tugas3/" title="Eliminasi Gaus" class="md-nav__link">
       Eliminasi Gaus
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Integrasi Romberg
+      </label>
+    
+    <a href="./" title="Integrasi Romberg" class="md-nav__link md-nav__link--active">
+      Integrasi Romberg
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-pengertian" class="md-nav__link">
+    A. Pengertian
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-code-program" class="md-nav__link">
+    B. Code Program
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-output" class="md-nav__link">
+    C. Output
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -465,10 +531,10 @@
                 
                 <h1 id="metode-integrasi-romberg"><strong>METODE INTEGRASI ROMBERG</strong><a class="headerlink" href="#metode-integrasi-romberg" title="Permanent link">&para;</a></h1>
 <h4 id="a-pengertian"><strong>A. Pengertian</strong><a class="headerlink" href="#a-pengertian" title="Permanent link">&para;</a></h4>
-<p>​       Integrasi Romberg merupakan teknik yang digunakan dalam integrasi numerik untuk  menganalisis kasus dimana fungsi yang akan diintegrasikan tersedia.  Teknik ini memiliki keunggulan untuk menghasilkan nilai-nilai dari fungsi yang digunakan untuk mengembangkan skema yang efisien bagi pengintegrasian secara numerik. Integrasi Romberg didasarkan pada ekstrapolasi Richardson (<em>Richardson's extrapolation</em>), yaitu metode untuk mengkombinasikan dua perkiraan integral secara numerik untuk memperoleh nilai ketiga, yang lebih akurat.</p>
-<p>​       Teknik ini bersifat rekursif dan dapat digunakan untuk menghasilkan sebuah perkiraan integral dalam batas toleransi kesalahan (<em>error tolerance</em>) yang sudah ditentukan terlebih dahulu. Metode ini digunakan untuk memperbaiki hasil pendekatan integrasi metode trapesium, karena
+<p>Integrasi Romberg merupakan teknik yang digunakan dalam integrasi numerik untuk  menganalisis kasus dimana fungsi yang akan diintegrasikan tersedia.  Teknik ini memiliki keunggulan untuk menghasilkan nilai-nilai dari fungsi yang digunakan untuk mengembangkan skema yang efisien bagi pengintegrasian secara numerik. Integrasi Romberg didasarkan pada ekstrapolasi Richardson (<em>Richardson's extrapolation</em>), yaitu metode untuk mengkombinasikan dua perkiraan integral secara numerik untuk memperoleh nilai ketiga, yang lebih akurat.</p>
+<p>Teknik ini bersifat rekursif dan dapat digunakan untuk menghasilkan sebuah perkiraan integral dalam batas toleransi kesalahan (<em>error tolerance</em>) yang sudah ditentukan terlebih dahulu. Metode ini digunakan untuk memperbaiki hasil pendekatan integrasi metode trapesium, karena
 kesalahan metode trapesium “cukup” besar untuk polinom untuk polinom pangkat tinggi dan fungsi transeden. </p>
-<p>​       Pada proses integrasi Romberg, mula-mula kita hitung kuadratur dengan lebar langkah h dan 2h. Defisini kuadratur adalah </p>
+<p>Pada proses integrasi Romberg, mula-mula kita hitung kuadratur dengan lebar langkah h dan 2h. Defisini kuadratur adalah </p>
 <p><img alt="img" src="https://html1-f.scribdassets.com/3bmo6b7kxs29arpy/images/1-a5159913f4.jpg" /></p>
 <p>Untuk menurunkan galat hampiran integral dari O(h2) menjadi O(h2n + 2) dapat digunakan
 ekstrapolasi Richardson seperti dinyatakan dalam teorema :</p>
@@ -571,6 +637,27 @@ ekstrapolasi Richardson seperti dinyatakan dalam teorema :</p>
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Tugas3/" title="Eliminasi Gaus" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Eliminasi Gaus
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
