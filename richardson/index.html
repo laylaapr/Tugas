@@ -447,8 +447,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#teori" class="md-nav__link">
-    Teori
+  <a href="#pengertian" class="md-nav__link">
+    Pengertian
   </a>
   
 </li>
@@ -504,8 +504,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#teori" class="md-nav__link">
-    Teori
+  <a href="#pengertian" class="md-nav__link">
+    Pengertian
   </a>
   
 </li>
@@ -542,12 +542,13 @@
                 
                 
                 <h1 id="richardson-extrapolation"><strong>Richardson Extrapolation</strong><a class="headerlink" href="#richardson-extrapolation" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>Dalam analisis numerik, Richardson Extrapolation adalah metode percepatan urutan, yang digunakan untuk meningkatkan laju konvergensi suatu urutan. </p>
+<h3 id="pengertian"><strong>Pengertian</strong><a class="headerlink" href="#pengertian" title="Permanent link">&para;</a></h3>
+<p>Ekstrapolasi Richardson merupakan metode yang menggunakan dua perkiraan dari sebuah integral untuk mengkomputasi pendugaan ketiga, yang lebih akurat. Perkiraan dan kesalahan (<em>error</em>) yang diasosiasikan dengan aturan trapesium multi-aplikasi (<em>multiple-application trapezoidal rule</em>) dapat digambarkan secara umum sebagai </p>
+<p align = "center"><i>I = I(h) + E(h)</i></p>
+
+<p>di mana <em>I</em> adalah nilai yang sebenarnya dari integral tersebut, <em>I(h)</em> adalah pendugaan dari sebuah aturan trapesium dengan aplikasi bersegmen <em>n</em> dengan lebar langkahnya <em>h = (b – a)/n</em>, dan <em>E(h)</em> adalah kesalahan pemotongan (<em>truncation error</em>).</p>
 <p>Richardson Extrapolation termasuk integrasi Romberg, yang menerapkan ekstrapolasi Richardson pada aturan trapesium, dan algoritma Bulirsch-Stoer untuk menyelesaikan persamaan diferensial biasa.</p>
-</blockquote>
-<h3 id="teori"><strong>Teori</strong><a class="headerlink" href="#teori" title="Permanent link">&para;</a></h3>
-<p>Dalam rumus :</p>
+<p><strong>Rumus :</strong></p>
 <p><strong><em>( f (x + h) - f (x - h) ) / (2 h)</em></strong></p>
 <p>untuk nilai h yang sangat kecil, dua fungsi evaluasi <em>f (x + h)</em> dan <em>f (x - h)</em> akan menjadi kira-kira sama, dan oleh karena itu pembatalan subtraktif akan terjadi. Oleh karena itu, tidak disarankan untuk menggunakan nilai h yang semakin kecil.</p>
 <p>Kita dapat mencoba untuk memperkirakan nilai tepat <em>e</em> dengan perkiraan <em>a(h)</em>. Dalam hal ini, <em>e</em> adalah turunan dari <em>f (1) (x)</em> dan perkiraannya adalah <em>( h ) = (f (x + h) - f (x - h)) / (2 h)</em>. Misalkan sekarang bahwa kesalahan aproksimasi didefinisikan oleh serangkaian bentuk Taylor :</p>
