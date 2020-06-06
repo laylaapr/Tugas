@@ -13,7 +13,7 @@
         <meta name="description" content="Repository Tugas">
       
       
-        <link rel="canonical" href="https://laylaapr.github.io/Tugas/MetodeEuler/">
+        <link rel="canonical" href="https://laylaapr.github.io/Tugas/MonteCarlo/">
       
       
         <meta name="author" content="Lailatul Badria D.A.A">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Metode Euler - Lailatul Badria D.A.A</title>
+        <title>Monte Carlo Integration - Lailatul Badria D.A.A</title>
       
     
     
@@ -118,7 +118,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#methode-euler" tabindex="0" class="md-skip">
+      <a href="#monte-carlo-integration" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -144,7 +144,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Metode Euler
+                Monte Carlo Integration
               
             </span>
           
@@ -430,6 +430,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../MetodeEuler/" title="Metode Euler" class="md-nav__link">
+      Metode Euler
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -439,11 +451,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Metode Euler
+        Monte Carlo Integration
       </label>
     
-    <a href="./" title="Metode Euler" class="md-nav__link md-nav__link--active">
-      Metode Euler
+    <a href="./" title="Monte Carlo Integration" class="md-nav__link md-nav__link--active">
+      Monte Carlo Integration
     </a>
     
       
@@ -455,30 +467,45 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#methode-euler" class="md-nav__link">
-    Methode Euler
+  <a href="#monte-carlo-integration" class="md-nav__link">
+    MONTE CARLO INTEGRATION
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#contoh-soal" class="md-nav__link">
-    Contoh Soal
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-program-dengan-python" class="md-nav__link">
-    Code Program dengan Python
+  <a href="#pengertian" class="md-nav__link">
+    Pengertian
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#algoritma-dan-contoh-motode-monte-carlo" class="md-nav__link">
+    Algoritma dan Contoh Motode Monte Carlo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tugas-programming" class="md-nav__link">
+    Tugas Programming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasil-running" class="md-nav__link">
+    Hasil Running
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasil-running_1" class="md-nav__link">
+    Hasil Running
+  </a>
   
 </li>
         
@@ -495,18 +522,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../MonteCarlo/" title="Monte Carlo Integration" class="md-nav__link">
-      Monte Carlo Integration
-    </a>
   </li>
 
         
@@ -534,30 +549,45 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#methode-euler" class="md-nav__link">
-    Methode Euler
+  <a href="#monte-carlo-integration" class="md-nav__link">
+    MONTE CARLO INTEGRATION
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#contoh-soal" class="md-nav__link">
-    Contoh Soal
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-program-dengan-python" class="md-nav__link">
-    Code Program dengan Python
+  <a href="#pengertian" class="md-nav__link">
+    Pengertian
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#algoritma-dan-contoh-motode-monte-carlo" class="md-nav__link">
+    Algoritma dan Contoh Motode Monte Carlo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tugas-programming" class="md-nav__link">
+    Tugas Programming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasil-running" class="md-nav__link">
+    Hasil Running
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasil-running_1" class="md-nav__link">
+    Hasil Running
+  </a>
   
 </li>
         
@@ -583,55 +613,125 @@
               
                 
                 
-                  <h1>Metode Euler</h1>
+                  <h1>Monte Carlo Integration</h1>
                 
-                <h2 id="methode-euler">Methode Euler<a class="headerlink" href="#methode-euler" title="Permanent link">&para;</a></h2>
-<p>Rumus Euler, dinamakan untuk Leonhard Euler adalah rumus matematika dalam analisis kompleks yang menunjukkan hubungan mendalam antara fungsi trigonometri dan fungsi eksponensial.</p>
-<p>Metode Euler adalah metode urutan pertama, yang berarti bahwa kesalahan lokal (kesalahan per langkah) sebanding dengan kuadrat ukuran langkah, dan kesalahan global (kesalahan pada waktu tertentu) sebanding dengan ukuran langkah. Metode Euler sering berfungsi sebagai dasar untuk membangun metode yang lebih kompleks, misalnya, metode prediktor-korektor.</p>
-<p>Menghitung persamaan differensial melalui taksiran langsung dari slope xi diberi turunan pertama. </p>
-<p align = "center"><i>yi+1 = yi + f (xi ,yi )h</i></p>
-
-<p>dimana <em>i</em> merupakan tahapan iterasi.</p>
-<p><strong>Algoritma Metode Euler</strong></p>
+                <h2 id="monte-carlo-integration"><strong>MONTE CARLO INTEGRATION</strong><a class="headerlink" href="#monte-carlo-integration" title="Permanent link">&para;</a></h2>
+<h4 id="pengertian"><strong>Pengertian</strong><a class="headerlink" href="#pengertian" title="Permanent link">&para;</a></h4>
+<p>Metode Monte Carlo adalah algoritme komputasi untuk mensimulasikan berbagai perilaku sistem fisika dan matematika. Karena algoritme ini memerlukan pengulangan (repetisi) dan perhitungan yang amat kompleks, metode Monte Carlo pada umumnya dilakukan menggunakan komputer, dan memakai berbagai teknik simulasi komputer.</p>
+<p>Metode Monte Carlo sering digunakan dalam tiga masalah berbeda: optimasi, integrasi numerik dan generasi sampel dari distribusi probabilitas. Penggunaannya untuk pemodelan dari fenomena dengan ketidakpastian yang signifikan dalam input, seperti perhitungan risiko dalam bisnis. Metode ini secara luas digunakan dalam matematika, misalnya untuk menghitung multi dimensi definite integral dengan syarat batas yang rumit. Ketika metode ini diterapkan dalam eksplorasi ruang angkasa dan eksplorasi minyak, hasil memprediksi metode ini atas kegagalan, biaya dan jadwal overruns secara rutin lebih baik daripada intuisi manusia atau metode alternatif yang lebih “soft”.</p>
+<p>Prosedur integrasi numerik yang terkenal adalah metode <i>trapezoidal</i> atau <i>simpson</i>. Kedua prosedur tersebut berdasarkan teori limit jumlah Riemann  dimana ketebalan dari luas bidang yang kecil mendekati 0, atau bisa dilihat di bawah ini.</p>
+<p><img alt="img" src="../MC1.png" /></p>
+<h4 id="algoritma-dan-contoh-motode-monte-carlo"><strong>Algoritma dan Contoh Motode Monte Carlo</strong><a class="headerlink" href="#algoritma-dan-contoh-motode-monte-carlo" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Tentukan titik awal integrasi <em>x0</em> dan <em>y0</em>.</li>
-<li>Tentukan jumlah iterasi <em>n</em> dan <em>step size h</em> yang digunakan.</li>
-<li>Lakukan integrasi menggunakan Persamaan</li>
+<li>Probabilitas pelemparan coin Ganda</li>
 </ol>
-<p>Metode Euler digunakan sebagai dasar untuk metode Heun. Metode Euler menggunakan garis tangen ke fungsi di awal interval sebagai perkiraan kemiringan fungsi selama interval, dengan asumsi bahwa jika ukuran langkah kecil, kesalahan akan menjadi kecil. Namun, bahkan ketika ukuran langkah sangat kecil digunakan, lebih dari sejumlah besar langkah kesalahan mulai menumpuk dan estimasi menyimpang dari nilai fungsional aktual.</p>
-<p>Keakuratan metode Euler hanya meningkat secara linier dengan ukuran langkah berkurang.</p>
-<h4 id="contoh-soal"><strong>Contoh Soal</strong><a class="headerlink" href="#contoh-soal" title="Permanent link">&para;</a></h4>
-<p>Buatlah program untuk menyelesaikan persamaan differensial biasa berikut dengan menggunakan metode Euler</p>
-<p>Untuk menentukan y(1.01), y(1.02) dan y(1.03).</p>
-<h5 id="code-program-dengan-python">Code Program dengan Python<a class="headerlink" href="#code-program-dengan-python" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;f(x,y)=1+x^2&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;yi+1 = y1 + hf(xi+yi)&quot;</span><span class="p">)</span>
-<span class="n">x1</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan x1= &quot;</span><span class="p">))</span>
-<span class="n">x2</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan x2= &quot;</span><span class="p">))</span>
+<p>Dari teori peluang akan muncul:
+   MM -&gt; ¼ 
+   MB atau BM -&gt; ½ 
+   BB -&gt; ¼</p>
+<p>Dengan metode Monte Carlo dapatkan tingkat ketelitian sampai 0.01 untuk menyelesaikan kasus tersebut.</p>
+<p>Untuk mendapatkan ketelitian sampai 0,01 maka harus dilakukan pelemparan sebanyak 1000 (N_total) kali. Dari hasil pelemparan catat keluarnya angka-angka: 
+   P(MM) = N(MM)/N_total 
+   P(MB) = N(MB)/N_total 
+   P(BB) = N(BB)/N_total</p>
+<p>#### Algoritma</p>
+<ul>
+<li>
+<p>Bangkitkan nilai 0/1 sebanyak 1000 kali (N=1000) dengan cara: </p>
+<p>n1 =(int)rand()%2 dan n2 =(int)rand()%2 </p>
+</li>
+<li>
+<p>Klasifikasi 
+     Jika n1=0 dan n2=0, maka MM=MM+1 
+     Jika n1=0 dan n2=1 atau n1=1 dan n2=0 
+     maka MB=MB+1 Jika n1=1 dan n2=1, maka BB=BB+1 </p>
+</li>
+<li>
+<p>Hitung probabilitas MM dengan cara N(MM)/N dan probabilitas untuk nilai MB serta BB</p>
+</li>
+<li>
+<p>Menghitung dengan Metode Monte Carlo </p>
+</li>
+</ul>
+<p><img alt="img" src="D:\Ku Li Ah\template\docs\integral.png" /></p>
+<p>Luas area dicari = yang berwarna ataudaerah dibawah garis fungsi f(x) = 2x
+   Dengan dasar pemikiran tersebut diperoleh suatu perbandingan:</p>
+<p><img alt="img" src="../integral2.png" /></p>
+<p>Bila kita melakukan pelemparan coin sebanyak N kali, dan coin jatuh di bawah garis f(x) =2x sebanyak M kali.
+   Maka : <img alt="img" src="../int3.png" /></p>
+<h4 id="tugas-programming">Tugas Programming<a class="headerlink" href="#tugas-programming" title="Permanent link">&para;</a></h4>
+<p><img alt="img" src="../soal1.png" /></p>
+<p><strong>Implementasi Metode Carlo dalam Python</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">random</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="n">h</span> <span class="o">=</span> <span class="mf">1.01</span><span class="o">-</span><span class="n">x1</span> <span class="c1">#Langsung saya atur sendiri karena yang dicari f(x,y) nilai x-nya=1.01</span>
-<span class="n">n</span><span class="o">=</span><span class="mi">4</span> <span class="c1">#jumlah x ada 4 yaitu 1, 1.01, 1.02, 1.03</span>
-<span class="n">xi</span> <span class="o">=</span> <span class="o">-</span><span class="mi">4</span>
-<span class="n">hasil</span> <span class="o">=</span> <span class="n">xi</span>
-<span class="n">y</span><span class="o">=</span><span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hasil dari y&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;= &quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">hasil</span><span class="p">))</span>
-    <span class="n">hasil</span> <span class="o">=</span> <span class="n">xi</span> <span class="o">+</span> <span class="n">h</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="p">(</span><span class="n">x1</span><span class="o">+</span><span class="n">y</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">y</span><span class="o">+=</span><span class="n">h</span>
-    <span class="n">xi</span><span class="o">=</span><span class="n">hasil</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">N</span><span class="o">=</span><span class="mi">2500</span>
+
+
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">4</span><span class="o">-</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
+
+
+<span class="n">area</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="n">xrand</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">xrand</span><span class="p">)):</span>
+        <span class="n">xrand</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+        <span class="n">integral</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+        <span class="n">integral</span><span class="o">+=</span><span class="n">func</span><span class="p">(</span><span class="n">xrand</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+    <span class="n">jawab</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="o">*</span><span class="n">integral</span>
+    <span class="n">area</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">jawab</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Hasil phi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">area</span><span class="p">,</span><span class="n">bins</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span> <span class="n">ec</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Area&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
 
-<p>pada bagian pertama terdapat variable x1 adalah x awal dan x2 merupakan x akhir. karena di soal terdapat nx=3 yaitu x0=1, x1=1,01, x3=1,02 x2=1,03 maka h= xn-x0/n, hasilnya h = 0.01.</p>
-<p>xi adalah hasil awal yang kemudian akan dimasukkan pada prosess iterasi. Karena rumus eurel adalah y1 = y0 +h(f(x,y)) maka rumus barunya adalah y1=y0+h(1+x^2). variable y digunakan untuk penambahan nilai x agar selalu bertambah 0.01.</p>
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/x-mathjax-config&quot;</span><span class="p">&gt;</span>
-<span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
-  <span class="nx">tex2jax</span><span class="o">:</span> <span class="p">{</span><span class="nx">inlineMath</span><span class="o">:</span> <span class="p">[[</span><span class="s1">&#39;$$&#39;</span><span class="p">,</span><span class="s1">&#39;$$&#39;</span><span class="p">],[</span><span class="s1">&#39;$&#39;</span><span class="p">,</span><span class="s1">&#39;$&#39;</span><span class="p">]]}</span>
-<span class="p">});</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">async</span>
-  <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&quot;</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<h4 id="hasil-running"><strong>Hasil Running</strong><a class="headerlink" href="#hasil-running" title="Permanent link">&para;</a></h4>
+<p><img alt="img" src="../jwbn.png" /></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">random</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">N</span><span class="o">=</span><span class="mi">100</span>
+<span class="n">xrand</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="n">yrand</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="n">zrand</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="n">integral</span><span class="o">=</span><span class="mf">0.0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">xrand</span><span class="p">)):</span>
+        <span class="n">xrand</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">yrand</span><span class="p">)):</span>
+        <span class="n">yrand</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">zrand</span><span class="p">)):</span>
+        <span class="n">zrand</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+        <span class="n">integral</span><span class="o">+=</span><span class="n">func</span><span class="p">(</span><span class="n">xrand</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">yrand</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">zrand</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+<span class="n">jawab</span><span class="o">=</span><span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="o">*</span><span class="n">integral</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;jawab: &quot;</span><span class="p">,</span><span class="n">jawab</span><span class="p">)</span>
+</code></pre></div>
+
+
+<h4 id="hasil-running_1"><strong>Hasil Running</strong><a class="headerlink" href="#hasil-running_1" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="n">jawab</span><span class="p">:</span>  <span class="mf">7.941487167529855</span>
 </code></pre></div>
                 
                   
@@ -654,7 +754,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../richardson/" title="Richardson Extrapolation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../MetodeEuler/" title="Metode Euler" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -663,25 +763,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Richardson Extrapolation
+                Metode Euler
               </span>
             </div>
           </a>
         
-        
-          <a href="../MonteCarlo/" title="Monte Carlo Integration" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Monte Carlo Integration
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
